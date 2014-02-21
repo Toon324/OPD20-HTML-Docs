@@ -1,0 +1,672 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll">
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">OPD20</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="combat.html">Combat</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Items <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="combat.html#General_Items">General Items</a></li>
+                <li><a href="combat.html#Career_Kits">Career Kits</a></li>
+                <li><a href="combat.html#Weapons">Weapons</a></li>
+                <li><a href="combat.html#Armor_And_Shields">Armor and Shields</a></li>
+                <li><a href="combat.html#Advanced_Equipment">Advanced Equipment</a></li>
+                <li><a href="combat.html#Poisons">Poisons</a></li>
+                <li><a href="combat.html#Medicines">Medicines</a></li>
+                <li><a href="combat.html#Ammo">Ammo</a></li>
+                <li><a href="combat.html#Pop_Greens">Pop Greens</a></li>
+                <li><a href="combat.html#Traps">Traps</a></li>
+                <li><a href="combat.html#Log_Nav">Log Poses/ Navigation Tools</a></li>
+                <li><a href="combat.html#Dials">Dials</a></li>
+              </ul>
+            </li>
+          <li class="active"><a href="character.html">Character Info</a></li>
+          </ul>
+<!--
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../navbar/">Default</a></li>
+            <li><a href="../navbar-static-top/">Static top</a></li>
+            <li class="active"><a href="./">Fixed top</a></li>
+          </ul>
+-->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+        <div class="col-md-3" id="accordian">
+            <ul class="nav nav-list affix">
+                <li class="nav-header">
+                    <a href="#" data-toggle="collapse" data-target="#Creation_Menu">
+                        Character Creation
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Creation_Menu">
+                        <li><a href="#Alignment">Alignments</a></li>
+                        <li><a href="#Attributes">Attributes</a></li>
+                        <li><a href="#Disadvantages">Disadvantages</a></li>
+                        <li><a href="#Sizes">Sizes</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Races" data-toggle="collapse" data-target="#Races_Menu">
+                        Races
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Races_Menu">
+                        <li><a href="#Humans">Humans</a></li>
+                        <li><a href="#Merfolk">Merfolk</a></li>
+                        <li><a href="#Fishmen">Fishmen</a></li>
+                        <li><a href="#Giants">Giants</a></li>
+                        <li><a href="#Sky_Tribesmen">Sky Tribesmen</a></li>
+                        <li><a href="#Kuja">Kuja</a></li>
+                        <li><a href="#Cyborgs">Cyborgs</a></li>
+                        <li><a href="#Longarm_Longleg">Longarm/Longleg Tribesmen</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Classes" data-toggle="collapse" data-target="#Classes_Menu">
+                        Classes
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Classes_Menu">
+                        <li><a href="#Brawler">Brawler</a></li>
+                        <li><a href="#Marksman">Marksman</a></li>
+                        <li><a href="#Rogue">Rogue</a></li>
+                        <li><a href="#Specialist">Specialist</a></li>
+                        <li><a href="#Swordsman">Swordsman</a></li>
+                        <li><a href="#Warrior">Warrior</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Careers" data-toggle="collapse" data-target="#Careers_Menu">
+                        Careers
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Careers_Menu">
+                        <li><a href="#Bounty_Hunter">Bounty Hunter</a></li>
+                        <li><a href="#Chef">Chef</a></li>
+                        <li><a href="#Doctor">Doctor</a></li>
+                        <li><a href="#Marine">Marine</a></li>
+                        <li><a href="#Navigator">Navigator</a></li>
+                        <li><a href="#Musician">Musician</a></li>
+                        <li><a href="#Pirate">Pirate</a></li>
+                        <li><a href="#Scientist">Scientist</a></li>
+                        <li><a href="#Shipwright">Shipwright</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Prestige_Classes" data-parent="#accordian" data-toggle="collapse" data-target="#Prestige_Classes_Menu">
+                        Prestige Classes
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Prestige_Classes_Menu">
+                        <li><a href="#Karate">Aquatic Karate Master</a></li>
+                        <li><a href="#Assassin">Assassin</a></li>
+                        <li><a href="#Berserker">Berserker</a></li>
+                        <li><a href="#Brigand">Brigand</a></li>
+                        <li><a href="#Fencer">Fencer</a></li>
+                        <li><a href="#Fiend">Fiend</a></li>
+                        <li><a href="#Guardian">Guardian</a></li>
+                        <li><a href="#Gunslinger">Gunslinger</a></li>
+                        <li><a href="#Kempo">Okama Kempo Master</a></li>
+                        <li><a href="#Pyromancer">Pyromancer</a></li>
+                        <li><a href="#Rokushiki">Rokushiki Master</a></li>
+                        <li><a href="#Sky_Night">Sky Knight</a></li>
+                        <li><a href="#Sniper">Sniper</a></li>
+                        <li><a href="#Storm_Lord">Storm Lord</a></li>    
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Prestige_Careers" data-parent="#accordian" data-toggle="collapse" data-target="#Prestige_Careers_Menu">
+                        Prestige Careers
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                    <ul style="list-style: none;" class="collapse" id="Prestige_Careers_Menu">
+                        <li><a href="#Admiral">Admiral</a></li>
+                        <li><a href="#Butcher">Butcher</a></li>
+                        <li><a href="#Headhunter">Headhunter</a></li>
+                        <li><a href="#Maestro">Maestro</a></li>
+                        <li><a href="#Mechanic">Mechanic</a></li>
+                        <li><a href="#Meteorologist">Meteorologist</a></li>
+                        <li><a href="#Surgeon">Surgeon</a></li>
+                        <li><a href="#Tinkerer">Tinkerer</a></li>
+                        <li><a href="#Yonko">Yonko</a></li>
+                    </ul>
+                </li>
+                <li class="nav-header">
+                    <a href="#Primary_Skills" data-toggle="collapse" data-target="#Primary_Skills_Menu">
+                        Primary Skills
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                </li>
+                <li class="nav-header">
+                    <a href="#Secondary_Skills" data-toggle="collapse" data-target="#Secondary_Skills_Menu">
+                        Secondary Skills
+                        <small class="glyphicon glyphicon-chevron-down"></small>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-9">
+            <h1 class="page-header" id="Creation">Character Creation</h1>
+            <p>The inhabitants of the One Piece world can be very complex and have many different skills and specialties inside and outside of combat. This quick guide will walk you through the process of creating a new character from scratch. Please try to create your character based on how you want to play the game. It will be more fun for you, and you’ll act more naturally if you’re role playing a character that you’re comfortable with. Your DM will scale your game based upon your crew’s strengths so there’s no need for every crewman to be a super fighting machine, it may end up hurting your progress to do so. Character creation in this game is complex, so be sure you have at least an hour or two to build your character for the first time. The following are the 13 steps involved in creating a character in OPD20:</p>
+            <ol>
+                <li><b>Basic Information - </b>You’ll need to give your character a name, age, gender, and some physical characteristics.</li>
+                <li><b>Alignment - Next, you need to select your character’s alignment. Please see the alignment page for more information.</b></li>
+                <li><b>Disadvantages - </b>Select at least three disadvantages for your character to have. Choose wisely as you must act out these disadvantages.</li>
+                <li><b>Attributes - </b>Place an 8 in each attribute box (use pencil!). The six attributes are STR, CON, DEX, INT, WIS, and CHA. You have 20 attribute points to spend between these six attribute scores as you choose. However, no score can go above 16 at level 1.</li>
+                <li><b>Select a Race - </b>Select which race your character is. Once you have chosen, apply that race’s attribute bonuses (race/size bonuses are able to push a value past 16 at level 1) and write down their special feats/bonuses on your character sheet.</li>
+                <li><b>Attribute Modifiers - </b>Fill in your attribute modifiers (Att. Mod on character sheet) by subtracting 10 from each attribute score and then dividing the result by 2. There is a table in the key terms section if you need it.</li>
+                <li><b>Select a Class - </b>Choose which class you would like to play from the Classes section. Write down the free class feats which come with your choice and write down the names of the secondary skills your class has access to in your secondary skills section.</li>
+                <li><b>Choose your Career - </b>Pick the career path you want your character to go down. If your career unlocks any new secondary skills that your class didn’t have access to, write those into your secondary skills section.</li>
+                <li><b>Favor Skills - </b>Now you need to pick which skills you want to be your favored skills. Favored skills are the skills which your character excels at and whose rank will grow more quickly than non-favored skills. You may choose four primary and six secondary skills to mark as favored. To mark them as favored on your character sheet, place a check mark in the skill column labeled "F" after the skill name. You only have access to secondary skills which your class and career choices have unlocked. At level one, favored skills start at Rank 4 and non-favored skills start at Rank 1.</li>
+                <li><b>Calculate Health Points - </b>Fill out your starting HP by taking your CON attribute modifier and adding 5 to it. A character with a CON of 16 would start at level 1 with 8 HP, for example. Each level-up you add this value to the existing one. If your CON modifier value ever changes, recalculate your total HP. Your Non-Lethal HP is always the same total as your normal HP; however the current values can be different depending on how you are injured.</li>
+                <li><b>Set DR and Resistances - </b>Your DR (damage reduction) naturally starts at 1 and increases by 1 at each level-up. All of your resistances start at 0 and never naturally increase. Resistances only increase from feats and equipment.</li>
+                <li><b>Choose Starting Feats - </b>You have up to five feats that you may assign during character creation. Be sure to pay attention to the prerequisites for each feat. If the DM allows you to create a character that has a Devil Fruit ability at level one, you must purchase the Devil Fruit User feat. If you eat a devil fruit later during the story however, this feat is gained freely.</li>
+                <li><b>Buy Items - </b>Lastly, you have 100,000 Beli with which to purchase items. The items you buy at this point represent everything your character already owns before the main story takes place. It’s recommended you purchase a kit for your career and a weapon for your class.</li>
+            </ol>
+            
+            <h2 class="page-header" id="Alignment">The Nine Alignments</h2>
+            <p>Nine distinct alignments define all the possible combinations of the lawful-chaotic axis with the good-evil axis. Each alignment description below depicts a typical character of that alignment. Remember that individuals vary from this norm, and that a given character may act more or less in accord with his or her alignment from day to day. Use these descriptions as guidelines, not as scripts.</p>
+            <p>The first six alignments, lawful good through chaotic neutral, are the standard alignments for player characters. The three evil alignments are generally for monsters and villains (unless, of course, the player group is role-playing as the villains).</p>
+            <h4>Lawful Good, "Crusader"</h4>
+            <p>A lawful good character acts as a good person is expected or required to act. They combine a commitment to oppose evil with the discipline to fight relentlessly. They tell the truth, keep their word, help those in need, and speak out against injustice. A lawful good character hates to see the guilty go unpunished. Lawful good characters embody the characteristics of honor and compassion in all aspects of their life.</p>
+            <h4>Neutral Good, "Benefactor"</h4>
+            <p>A neutral good character does the best that a good person would do within their means. They are devoted to helping others. They work with kings and magistrates but do not feel beholden to them. Neutral Good characters embody doing what is morally good without bias for or against law and order.</p>
+            <h4>Chaotic Good, "Rebel"</h4>
+            <p>A chaotic good character acts as their conscience directs them with little regard for the expectations of others. They make their own way, but still act in a kind and benevolent way. They believe in goodness and righteousness but have little use for laws and regulations. They hate it when people try to intimidate others and tell them what to do. They follow their own moral compass, which, although good, may not agree with that of society. Chaotic Good characters embody the ideal of a good conscious combined with a free spirit.</p>
+            
+            <h4>Lawful Neutral, "Judge"</h4>
+            <p>A lawful neutral character acts as law, tradition, or a personal code directs them. Order and organization are paramount to them. They may believe in personal order and live by a code or standard, or they may believe in order for all and favor a strong, organized government. Lawful Neutral characters embody reliability and honor without being a zealot.</p>
+            
+            <h4 id="Neutral">Neutral, "Undecided"</h4>
+            <p>A neutral character does what seems to be a good idea. They don't feel strongly one way or the other when it comes to good vs. evil or law vs. chaos. Most neutral characters exhibit a lack of conviction or bias rather than a commitment to neutrality. Such a character thinks of good as better than evil—after all, they would rather have good neighbors and rulers than evil ones. Still, they’re not personally committed to upholding good in any abstract or universal way. Some neutral characters, on the other hand, commit themselves philosophically to neutrality. They see good, evil, law, and chaos as prejudices and dangerous extremes. They advocate the middle way of neutrality as the best, most balanced road in the long run. Neutral characters embody the middle ground, acting without prejudice or compulsion.</p>
+            
+            <h4 id="Chaotic_Neutral">Chaotic Neutral, "Free Spirit"</h4>
+            <p>A chaotic neutral character follows their whims. They are an individualist first and to the very end. They value their own liberty but don’t strive to protect others’ freedoms. They avoid authority, resent restrictions, and challenge traditions. A chaotic neutral character does not intentionally disrupt organizations as part of a campaign of anarchy. To do so, he would have to be motivated either by good or evil, and desire to change and affect others around them. A chaotic neutral character may be unpredictable, but their behavior is not totally random. Chaotic Neutral characters embody true freedom from both society’s restrictions and a do-gooder's zeal.</p>
+            
+            <h4 id="Lawful_Evil">Lawful Evil, "Dominator"</h4>
+            <p>A lawful evil character methodically takes what they want within the limits of his code of conduct without regard for who it hurts. They care about tradition, loyalty, and order but not about freedom, dignity, or life. They play by the rules but without mercy or compassion. They are comfortable in a hierarchy and would like to rule, but are willing to serve. They condemn others, not according to their actions, but according to race, religion, homeland, or social rank. They are loath to break laws or promises. This reluctance comes partly from their nature and partly because they depend on order to protect themselves from those who oppose them on moral grounds. Some lawful evil villains have particular taboos, such as not killing in cold blood, but instead having underlings do it, or not letting children come to harm, if it can be helped. They imagine that these compunctions put them above unprincipled villains. Some lawful evil people and creatures commit themselves to evil with a zeal like that of a crusader committed to good. Beyond being willing to hurt others for their own ends, they take pleasure in spreading evil as an end unto itself. They may also see doing evil as part of a duty to an evil deity or master.</p>
+            
+            <h4 id="Neutral_Evil">Neutral Evil, "Malefactor"</h4>
+            <p>A neutral evil character does whatever they can get away with. They are out for them self, pure and simple. They shed no tears for their kills, whether for profit, sport, or convenience. They have no love of order and hold no illusion that following law, traditions, or codes would make her any better or more noble. On the other hand, she doesn’t have the restless nature or love of conflict that a chaotic evil villain has. Some neutral evil villains hold up evil as an ideal, committing evil for its own sake. Most often, such villains are devoted to evil deities or secret societies. Neutral evil is the most dangerous alignment because it represents pure evil without honor and without variation.</p>
+            
+            <h4 id="Chaotic_Evil">Chaotic Evil, "Destroyer"</h4>
+            <p>A chaotic evil character does whatever his greed, hatred, and lust for destruction drive him to do. He is hot-tempered, vicious, arbitrarily violent, and unpredictable. If he is simply out for whatever he can get, he is ruthless and brutal. If he is committed to the spread of evil and chaos, he is even worse. Thankfully, his plans are haphazard, and any groups he joins or forms are poorly organized. Typically, chaotic evil people can be made to work together only by force and their leader lasts only as long as he can thwart attempts to topple or assassinate him. Chaotic evil is the most dangerous alignment because it represents the destruction not only of beauty and life but also of the order on which beauty and life depend.</p>
+            
+            <h2 class="page-header" id="Disadvantages">Disadvantages</h2>
+            <p>Disadvantages are natural traits your character starts with from level 1. They may gain more disadvantages as their life continues, but at level 1 all characters must have at least three disadvantages. No character in the One Piece universe is perfect and they often have many flaws which their nakama must make up for. As a player, you’ll want to think about which disadvantages fit for your character, and which you can accurately act out as part of the game. I chose not to include descriptions for each of these because I wanted to save some page space and because I want you, the player, to come up with your own unique perspective on how your disadvantages will impact your character.</p>
+            
+            <div class="col-sm-4">
+                <ul>
+                    <li>Aggression</li>
+                    <li>Ambitious</li>
+                    <li>Amnesia</li>
+                    <li>Animal enmity</li>
+                    <li>Anxiety disorder</li>
+                    <li>Asthma</li>
+                    <li>Attention deficit disorder</li>
+                    <li>Bad luck</li>
+                    <li>Bad reputation</li>
+                    <li>Black sheep</li>
+                    <li>Blindness</li>
+                    <li>Brash</li>
+                    <li>Chronic pain</li>
+                    <li>Compulsive Judas</li>
+                    <li>Compulsively healthy/hygienic</li>
+                    <li>Consuming hobby</li>
+                    <li>Covetous</li>
+                    <li>Cowardice</li>
+                    <li>Cruel</li>
+                    <li>Curse</li>
+                    <li>Cynic</li>
+                    <li>Deafness</li>
+                    <li>Death wish</li>
+                    <li>Debt</li>
+                    <li>Delusions</li>
+                    <li>Dependant</li>
+                    <li>Depression</li>
+                    <li>Diabetic</li>
+                    <li>Domineering</li>
+                    <li>Drug addiction</li>
+                    <li>Dyslexia</li>
+                    <li>Eating disorder</li>
+                    <li>Ecomaniac</li>
+                    <li>Egotist</li>
+                    <li>Fanaticism</li>
+                    <li>Fixation</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <li>Flashbacks</li>
+                    <li>Forgotten</li>
+                    <li>Greedy</li>
+                    <li>Guilt</li>
+                    <li>Gullible</li>
+                    <li>Habitual liar</li>
+                    <li>Haemophilia</li>
+                    <li>Haemophobia</li>
+                    <li>Hatred</li>
+                    <li>Haunted</li>
+                    <li>Health/Hygiene negligent</li>
+                    <li>Hypoallergenic</li>
+                    <li>Hypochondriac</li>
+                    <li>Illness</li>
+                    <li>Impotence</li>
+                    <li>Insomnia</li>
+                    <li>Intolerance</li>
+                    <li>Jealousy</li>
+                    <li>Lack of Orientation</li>
+                    <li>Lecherousness</li>
+                    <li>Low pain threshold</li>
+                    <li>Low self esteem</li>
+                    <li>Maimed</li>
+                    <li>Mania</li>
+                    <li>Manic-depression</li>
+                    <li>Manipulative</li>
+                    <li>Martyr</li>
+                    <li>Mental compulsion</li>
+                    <li>Mental constriction</li>
+                    <li>Migraine</li>
+                    <li>Mistaken identity</li>
+                    <li>Mortal enemy</li>
+                    <li>Narcolepsy/Epilepsy</li>
+                    <li>Needy</li>
+                    <li>Nightmares</li>
+                    <li>Oath of revenge</li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <li>Oedipal</li>
+                    <li>Panic disorder</li>
+                    <li>Paranoia</li>
+                    <li>Persecuted</li>
+                    <li>Perverted</li>
+                    <li>Phobia</li>
+                    <li>Poltergeist</li>
+                    <li>Post-traumatic stress disorder</li>
+                    <li>Pretentious</li>
+                    <li>Rationalist</li>
+                    <li>Reactionary</li>
+                    <li>Rebellious</li>
+                    <li>Reckless gambler</li>
+                    <li>Rival</li>
+                    <li>Scarred</li>
+                    <li>Schizophrenia</li>
+                    <li>Secret</li>
+                    <li>Self-injury</li>
+                    <li>Sexual neurosis</li>
+                    <li>Sexually repressed</li>
+                    <li>Sexually tantalizing</li>
+                    <li>Sleepwalker</li>
+                    <li>Speech impediment</li>
+                    <li>Split personality</li>
+                    <li>Socially inept</li>
+                    <li>Sociopath</li>
+                    <li>Stalker</li>
+                    <li>Sterile</li>
+                    <li>Stoic</li>
+                    <li>Submissive</li>
+                    <li>Symbiotic link</li>
+                    <li>Tourette's syndrome</li>
+                    <li>Unwilling medium</li>
+                    <li>Vain</li>
+                    <li>Wanted</li>
+                    <li>Weak immune system</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            
+            <h2 class="page-header" id="Attributes">Attributes</h2>
+            <p>Each character starts with a score of 8 in each attribute at level 1. Having a score of 10 points in an attribute is considered “average” in the One Piece universe. Players have up to 20 attribute points they can distribute during character creation. Any points unspent at the end of character creation are lost. During this time, players may also choose to decrease an attributes score. Decreasing an attributes score refunds attribute points and allows them to be redistributed elsewhere. An attribute may not be reduced below a base score of 1. Throughout the course of your character's life, regardless of its current level, an attribute may be increased at the cost of one attribute point. The maximum score an attribute may be at level one is 16 (excluding race modifiers). One piece characters always have strengths and weaknesses, so don’t feel discouraged if you have multiple stats with values under the average. Your weaknesses will hopefully be balanced out by your fellow crewmates, which is what being a crew is all about.</p>
+            
+            <p><b>Strength (STR) - </b>The measure of bodily or muscular power. The stronger your body is, the stronger your physical attacks will become. This stat also influences other physical actions such as lifting, pushing, pulling, climbing, etc.</p>
+            
+            <p><b>Constitution (CON) - </b>The physical nature of the body as to toughness and health. Characters with high constitution have more health and can therefore take more hits before needing to be healed. They are also less likely to be severely damaged by enemy attacks and are more resistant to diseases and poisons.</p>
+            
+            <p><b>Dexterity (DEX) - </b>Skill in using the hands or body including flexibility, accuracy, and speed. A dexterous character can make good use of their hands whether it’s aiming a weapon or pick pocketing. They are also more likely to dodge attacks and be able to maneuver through tough obstacles. Skills which require good hand-eye coordination are also influenced by this stat, playing a musical instrument for example.</p>
+            
+            <p><b>Intelligence (INT) - </b>Capacity for learning, reasoning, understanding, and similar forms of mental activity. Having a high intelligence also allows the character to see through deceptions and quickly think up good plans to use during bad situations. They are more likely to understand complex subjects and be willing to experiment with new ideas. This attribute is vital for skills such as engineering, studying, and inventing.</p>
+            
+            <p><b>Wisdom (WIS) - </b>Knowledge of what is true or right coupled with just judgment. The character’s capacity for knowledge and level of memory. A character with a high amount of wisdom can not only memorize things quickly, but also understands their meaning and significance. This is key for skills which require high levels of memory such as navigation, history, cooking, archaeology, and medicine.</p>
+            <p><b>Charisma (CHA) - </b>Aptitude for holding a leadership position, and the ability to convey a worthiness of veneration from others. A character with high charisma leaves a big impact on anyone he/she meets. They can easily acquire new nakama and even when they say the wrong thing in ignorance; it often works out for the best. Skills which require social interaction and leadership often make use of this attribute. This does not represent the physical attractiveness of a character.</p>
+            
+            <h2 class="page-header" id="Sizes">Character Sizes</h2>
+            <p>In the One Piece world, size matters. Generally, each race allows the player to pick from a range of different character sizes. Each size offers different bonuses which are outlined below. Apply these bonuses to your character sheet and take them into consideration when rolling for skills and role-playing. Weapons and armor stats do not scale based on a character’s size. If a medium character hands a colossal character a longsword, the longsword will automatically appear much larger to match the colossal character’s size, but its stats will be exactly the same. This is to keep things simple and can be explained by the same inexplicable logic that allows devil fruit user’s clothing not to be destroyed every time they change sizes and forms.</p>
+            <div class="col-sm-12">
+                <p><b>Attack Bonus: </b>Larger opponents are easier to read and dodge.</p>
+                <p><b>Defense Bonus: </b>Small opponents are harder to hit.</p>
+                <p><b>Space: </b>The square feet the character takes up on the field.</p>
+                <p><b>Reach: </b>Natural reach distance with a standard weapon.</p>
+                    
+                <table class="table table-compact table-striped">
+                    <tr>
+                        <th>Size</th>
+                        <th>Modifiers</th>
+                        <th>Size</th>
+                        <th>Modifiers</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Colossal <br/>
+                            64ft. or more<br/>
+                            125 tons or more
+                        </td>
+                        <td>
+                            Attack Bonus: -4<br/>
+                            Defense Bonus: -4<br/>
+                            Space: 30ft<br/>
+                            Reach: 30ft<br/>
+                            CON: +4<br/>
+                            STR: +4<br/>
+                            DEX: -4
+                        </td>
+                        <td>
+                            Large<br/>
+                            8ft. to 16ft.<br/>
+                            500lb. – 2 tons
+                        </td>
+                        <td>
+                            Attack Bonus: -1<br/>
+                            Defense Bonus: -1<br/>
+                            Space: 10ft<br/>
+                            Reach: 10ft<br/>
+                            CON: +1<br/>
+                            STR: +1<br/>
+                            DEX: -1
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Gargantuan<br/>
+                            32ft. to 64ft.<br/>
+                            16 tons – 125 tons
+                        </td>
+                        <td>
+                            Attack Bonus: -3<br/>
+                            Defense Bonus: -3<br/>
+                            Space: 20ft<br/>
+                            Reach: 20ft<br/>
+                            CON: +3<br/>
+                            STR: +3<br/>
+                            DEX: -3
+                        </td>
+                        <td>
+                            Medium<br/>
+                            4ft. to 8ft.<br/>
+                            60lb. – 500lb.
+                        </td>
+                        <td>
+                            Attack Bonus: +0<br/>
+                            Defense Bonus: +0<br/>
+                            Space: 5ft<br/>
+                            Reach: 5ft<br/>
+                            CON: +0<br/>
+                            STR: +0<br/>
+                            DEX: -0
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Huge<br/>
+                            16ft. to 32ft.<br/>
+                            2 tons – 16 tons
+                        </td>
+                        <td>
+                            Attack Bonus: -2<br/>
+                            Defense Bonus: -2<br/>
+                            Space: 15ft<br/>
+                            Reach: 15ft<br/>
+                            CON: +2<br/>
+                            STR: +2<br/>
+                            DEX: -2
+                        </td>
+                        <td>
+                            Small<br/>
+                            2ft. to 4ft.<br/>
+                            8 lb. – 60 lb.<br/>
+                        </td>
+                        <td>
+                            Attack Bonus: +1<br/>
+                            Defense Bonus: +1<br/>
+                            Space: 5ft<br/>
+                            Reach: 5ft<br/>
+                            CON: -1<br/>
+                            STR: -1<br/>
+                            DEX: +1
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="clearfix"></div>
+            
+            <h1 class="page-header" id="Races">Races</h1>
+            <p>There are many different races in the One Piece universe, each with their own unique strengths and weaknesses. The seven different races come in many shapes and sizes, with humans having the widest variety of choices. There are also specialized races such as Cyborgs that attain special implants or Sky Tribesmen who have a natural bonus when using Sky Island dials. Giants, the largest race, also add a different level of difficulty since they can only ride large ships and attract a lot of attention. When you choose your race, apply the race’s bonuses to your character sheet immediately.</p>
+            
+            <h2 class="page-header" id="Humans">Humans</h2>
+            <p><b>Physical Description: </b>Humans in One Piece are much like they are in real life. They have diverse skin tones, all types of hair, and are commonly the same size and proportion. However, there are exceptions where the humans in One Piece may have various body parts which are vastly out of normal human standards. For example, a human could be 16 feet tall, or have a 10 inch nose, or have skinny legs but also have huge arms/torso. There are also examples of humans having drastic similarities to animal species. In the series, a couple men look almost exactly like monkeys. While the vast majority of humans look just like normal people, you’re welcome to customize your human character as much as you want.</p>
+            
+            <p><b>Society: </b>Humans are the most common and dominant race in the world, making up more than 95% of the world’s population. They call each and every sea in the world their home and rule at the top of most of the world’s organizations. They also possess the most advanced technology and are arguably the most intelligent race in the world, though that is mostly due to humans having the highest population to pull geniuses out of. Depending on the island and area of the world, human societies differ greatly, though most live under the rules and regulations of the world government. Humans seeking power or adventure often become pirates or marines so they can travel and become stronger.</p>
+            
+            <p><b>Relations: </b>Humans can be a cruel race and have in the past, enslaved many of the other races to do their bidding. Officially, slavery is now illegal, however there are still black market slave-trades, many of which are supported by the world government but covered up. Due to this, some of the other races still hold a grudge, especially the Fishmen, who were treated very poorly during the days of slavery. Other than some of the Fishmen though, most of the other races have forgiven humanity for their past transgressions and treat them kindly.</p>
+            
+            <p><b>Alignment and Religion: </b>Humans are across the board when it comes to their alignments and respect for the law. Some are exceptionally kind and law abiding while others are ruthlessly cruel. Generally, humans are good or neutral and tend to follow whatever laws the world government enforces upon them. Religion wise, it’s much the same. Some humans worship a god or gods, while others are atheists. No true deity has ever been exposed in the One Piece series so it matters little what religion you choose, though it may affect your character’s personal morals.</p>
+            
+            <p><b>Human Racial Traits:</b></p>
+            <ul>
+                <li><b>Varied Nature - </b>+2 attribute score points to spend at character creation bringing the total to 22, instead of the normal 20.</li>
+                <li><b>Size - </b>Small to Large</li>
+                <li><b>Normal Speed - </b>30ft/turn on Land, 20ft/turn in Water</li>
+                <li><b>Skilled - </b>Gain one extra favored secondary skill at the first level, making the total seven instead of the normal six other races get.</li>
+                <li><b>Gluttonous - </b>Humans start with an extra devil fruit feat (when they obtain a fruit ability). This extra feat should not be counted toward of any of the devil fruit level restrictions.</li>
+            </ul>
+            
+            <h2 class="page-header" id="Merfolk">Merfolk</h2>
+            <p><b>Physical Description: </b>Merfolk are very similar to humans in both size and form. Mermaids, the females of the race, usually have very human looking upper bodies; however their lower halves typically have the shape of a fish tail or some other type of sea creature. Mermen on the other hand typically have more animalistic upper halves, though some still look very human. They range in size from very small to the size of giants. Compared to their Fishmen cousins however, Merfolk are frail and more suited for intelligence or jobs which require agility and speed. Mermaids are known to be extremely beautiful to the eyes of humans which is typically true, however that is not always the case. At the age of 30, a mermaid’s tail splits which grants the mermaid a pair of legs to use on land, while a merman’s tail never split. Merfolk are also known to be the fastest swimmers in the sea.</p>
+        
+            <p><b>Society: </b>Merfolk almost exclusively live on Fishman Island where the first half of the Grand Line ends. The island is ruled by a Merfolk monarchy and is a beautiful and peaceful place to live. Unlike Fishmen, Merfolk are exclusively vegetarians, preferring oceanic plants, except for the occasional shellfish. Having the ability to speak to aquatic animals also impacts their lifestyle since they can work with animals to accomplish tasks or to pay for transportation from them. Additionally, Merfolk often have an animal companion that can provide them with help in a tough situation.</p>
+        
+            <p><b>Relations: </b>Merfolk share their home, Fishman Island, with the Fishmen and coexist peacefully with them. Merfolk are a peaceful race who want nothing to do with war or violence which, unfortunately, is what made them such easy targets for enslaving. Young mermaids fetch the highest prices on the slavery black market and even to this day, are sought out by slavers to sell at a high profit. It’s not in the nature of Merfolk to seek revenge or hold a grudge, so they’re typically friendly towards humans and other races who visit their island.</p>
+        
+            <p><b>Alignment and Religion: </b>Merfolk are friendly creatures with high moral standards. Some have been known to be cruel or have radical ideas, but they’re rare. Most Merfolk are content with following the monarchy’s laws and living their life peacefully on Fishman Island. While Merfolk don’t openly worship any gods, they do believe in an afterlife and the ability to pray to their ancestors. Members of the royal family are treated with absolute respect and are probably the closest thing Merfolk have to gods.</p>
+            
+            <p><b>Merfolk Racial Traits:</b></p>
+            <ul>
+                <li><b>Sea Dweller - </b>+2 DEX, +2 INT, -2 CON</li>
+                <li><b>(Male Only) Aquatic Combat - </b>+2 to STR and DEX while underwater</li>
+                <li><b>(Female Only) High-Speed Swimmer - </b>+15ft/turn while swimming.</li>
+                <li><b>(Female Only) Tail-Split – </b>+10ft/turn while on land once over the age of 30.</li>
+                <li><b>Size – </b>Small to Large</li>
+                <li><b>Tail Fin – </b>15ft/turn on Land, 35ft/turn in Water</li>
+                <li><b>Fish Talk - </b>Ability to talk to all sea creatures, except Sea Kings.</li>
+                <li><b>Gills – </b>Able to breathe and talk underwater</li>
+            </ul>
+
+            
+            <h2 class="page-header" id="Fishmen">Fishmen</h2>
+            <p><b>Physical Description: </b>Fishmen have the appearance of a humanoid (legs) but their entire bodies usually take on the appearance of a type of sea creature. For example, an octopus Fishman might have 6 tentacle-like arms. Fishmen have gills along their necks used for breathing underwater, but while on land, they use lungs to breath and their gills are non-functional. Fishmen are born with stronger bodies than humans and Merfolk. They are generally taller than humans and have large bodies full of muscle and animalistic traits such as shark teeth, fins, or webbed hands/feet. Fishmen pirates often have tattoos which serve a double purpose of covering up old slavery scars and showing their allegiance to the pirate crew.</p>
+        
+            <p><b>Society: </b>Like Merfolk, they generally live on Fishman Island which resides underwater. They are mammals and give birth to live young. They can also breed with other races such as Humans, Merfolk, and even Giants. Breeding with a human will result in a more human-like Fishman. Breeding with a merman/mermaid results in a random child of either Merfolk or Fishman appearance. Finally, breeding with a giant will result in a slightly smaller giant with Fishmen attributes which are called Wotans. Unlike Merfolk, Fishmen eat fish and other meats. Fishmen beliefs are more totalitarian than their Merfolk cousins. They believe they should dominate life under the sea and that they should rule other them.</p>
+        
+            <p><b>Relations: </b>Fishmen get along very well with Merfolk since they live side by side. However, some Fishmen have a very low opinion when it comes to humans. Humans enslaved Fishmen for many years, using their impressive strength for manual labor. While some Fishmen have gotten over this past transgression, many Fishmen pirates and other lower class citizens still harbor hatred toward the human race.</p>
+        
+            <p><b>Alignment and Religion: </b>Fishmen don’t have a known religion they worship. Law abiding Fishmen follow the rules of the Merman King and monarchy. Fishmen pirates and ruffians typically only believe in their own superior strength and cunning. Humans often assume Fishmen are lawless and evil because of past prejudices, but some Fishmen are good natured and get along very well with everyone.</p>
+            
+            <p><b>Merfolk Racial Traits:</b></p>
+            <ul>
+                <li><b>Ocean Warrior - </b>+2 STR, +2 CON, -2 INT</li>
+                <li><b>Aquatic Force - </b>+4 to STR while underwater</li>
+                <li><b>Size – </b>Medium to Large</li>
+                <li><b>Swimmer’s Build – </b>20ft/turn on Land, 30ft/turn in Water</li>
+                <li><b>Fish Talk - </b>Ability to talk to all sea creatures, except Sea Kings</li>
+                <li><b>Gills – </b>Able to breathe and talk underwater</li>
+            </ul>
+            
+            <h2 class="page-header" id="Giants">Giants</h2>
+            <p><b>Physical Description: </b>Giants are huge humanoid creatures many times larger than any of the other races. They look human in appearance, scaled up much larger than any human could ever grow. To put it into perspective, the height of an average human would only reach a small giant’s ankles. Giants vary greatly in size but they can grow all the way to the size of mountains. Giants can live to be over 300 years old.</p>
+        
+            <p><b>Society: </b>Giant societies are mostly unknown. We do know they only exist in the Grand Line and that there are two main areas which giants reside in. The first of which is Elbaf. Elbaf is a barbarian-like society that worships a variety of Gods which all seem to have affiliations with battle and honor. Giants from Elbaf are almost exclusively warriors who become pirates or explorers seeking honor and reputation. However, not all giants are from Elbaf. There are some giants which call the residents of Elbaf barbarian-like and don’t share in the same beliefs. Many of these non-Elbaf giants join the Marines, seeking honorable battles. There are exceptions to the norm however, and evil giants do exist. It’s unknown where they are born or live, but there are various examples of giants that join evil crews who are out for blood or sheer power over the rest of the world.</p>
+        
+            <p><b>Relations: </b>Giants get along well with other races and are generally friendly, light-hearted, and have casual personalities. Each giant seems to have their own comical and unique laugh as well. The marines have no problem hiring a willing giant for their strength, and they have been known to have families and children with other races. While giants are mentioned in popular children books, most of world’s population assumes they are only myths and legends. Only those who meet a real giant on the Grand Line can fully comprehend their size.</p>
+            
+            <p><b>Giant Racial Traits: </b></p>
+            <ul>
+                <li><b>Colossal Warrior - </b>+4 STR, +4 CON, -2 INT, -2 WIS, -2 DEX</li>
+                <li><b>Size – </b>Huge to Colossal</li>
+                <li><b>Huge Stride - </b>40ft/turn on Land, 30ft/turn in Water</li>
+                <li><b>Jolly Laughter - </b>While in a good mood, particularly when laughing, the giant gains a +2 CHA bonus.</li>
+            </ul>
+            
+            <h2 class="page-header" id="Sky_Tribesmen">Sky Tribesmen</h2>
+            <p><b>Physical Description: </b>There are three Sky Tribes; the Skypieans, Shandians, and the Birkan. Skypieans look very human but have very pale skin, light hair colors, and short white wings. They style their hair into two antennae, much like insect antennae. The Shandians resemble Native American tribes, with dark tan or reddish skin, tribal tattoos, and black hair. Shandian wings are slightly longer than Skypiean wings. Last are the Birkans who are a bit of a mystery. Only a few have been seen in the series so far. They typically wear white robes and have strong battle skills. Their wings have more of a downward angle than the other two sky tribes and they sometimes have body features which are angelic or demonic in appearance, such as small horns. All three tribe’s wings are too small to be of any functional use, they are just there for appearance.</p>
+        
+            <p><b>Society: </b>Skypieans have a peaceful society which relies heavy upon their laws and regulations. They are lead by “God”, not a real god but a king of sorts. Skypieans rely heavily on dials (see dials section) which they use for just about everything from household chores to battle. Shandians live somewhat humbler lives but also use dials to help in their everyday lives. They worship an ancient city and bell which their ancestors protected for hundreds of years before them. As far as anyone knows, the Birkan’s civilization was destroyed. They now live only as outcasts and nomads in random parts of the world and no longer have a society to call their own.</p>
+        
+            <p><b>Relations: </b>The Skypieans and Shandians were recently at war with each other over the Skypieans stealing the Shandian’s land. Skypieans worship Vearth, the soil from the world below the clouds. When an entire island of Vearth was shot into the clouds with the Shandians still on it, the Skypieans invaded and forced the Shandians off their land. However, that is all in the past and the Skypieans returned the land and the two cultures now live in peace with each other. The Birkan’s don’t really have any major factions with or against them anymore.</p>
+        
+            <p><b>Alignment and Religion: </b>Skypieans, for a while, worshipped the god Enel. He had incredible power and he had all the residents of the Sky Islands living in fear. In reality, Enel was just a Devil Fruit user and he was defeated. Enel left the Sky Islands and now the old god, Gan Fall, is back in charge of the Skypieans. Everyone knows he is not a true god, but they treat him as a king. The Shandians worship their ancestors above all else and believe in protecting their ancient city. The Alignment of the Sky races varies greatly, however there are stereotypes. Skypieans are generally good natured and kind, as there haven’t been any evil Skypieans exposed in the series yet. Shandians are greatly neutral, and will fight any faction to protect what they believe in. The Birkan have always been represented as evil or violent.</p>
+            
+            <p><b>Sky Tribesman Racial Traits: </b></p>
+            <ul>
+                <li><b>Skypiean: </b>+2 INT, +2 WIS, -2 STR, <b>Shandian: </b>+2 DEX, +2 WIS, -2 INT, <b>Birkan: </b>+2 STR, +2 INT, -2 CHA</li>
+                <li><b>Size – </b>Small to Large</li>
+                <li><b>Angelic Steps - </b>30ft/turn on Land, 20ft/turn in Water</li>
+                <li><b>Dial Mastery - </b>Grants the feat Dial Mastery, which is only available to Sky Tribesmen</li>
+                <li><b>Mantra – </b>Starts with the Kenbunshoku Haki Feat. The skill bonuses are only +5 instead of +10. The DC to maintain the effect is reduced to 17. The Sky Tribesman cannot purchase any additional ranks or achieve the feat’s full potential until the normal prerequisites are met.</li>
+            </ul>
+            
+            <h2 class="page-header" id="Kuja">Kuja</h2>
+            <p><b>Physical Description: </b>A tribe of all female fighters found on the island of Amazon Lily, better known as the legendary “Island of Women”. They typically wear skimpy clothing such as bikinis, loincloths, or short briefs. Many wear thigh high boots and stockings or have their legs completely bare. On top of these outfits, they almost always wear a long, removable, cape. Aside from their “kinky” clothing, they also carry a long snake which serves as a pet and a weapon. Most Kuja are burly and strong looking, but there are the odd beauties amongst them.</p>
+        
+            <p><b>Society: </b>Despite being a warrior race, they are surprisingly peaceful and really only engage in combat during competitions and games for entertainment purposes. They do all the work in their society including but not limited to fishing, building, smithing, and other more physically intense jobs. The Kuja are very ignorant of men and most have never seen one before. Therefore they have no shyness since they barely have any concept of sexual attraction. They often bath fully nude in public and do various other things that would commonly be considered very inappropriate. They have little to no knowledge of male anatomy and likewise the civilized world knows very little about the Kuja.</p>
+        
+            <p><b>Relations: </b>Kuja have basically no knowledge of the outside world. Only the Kuja pirates led by their princess truly know what the outside world is like. Some of the women who leave Amazon Lily and return to the island come back pregnant; however their children are always female when born on the island. Otherwise, they are biologically identical to normal human females. Every Kuja bonds with a snake while growing up and when the snake matures, it acts as a tool for the Kuja’s survival. The snake can take the form of a few different types of weapons such as a longbow and staff. The snake doesn’t transform, it just takes the general shape of the weapon.</p>
+        
+            <p><b>Alignment and Religion: </b>The Kuja don’t have a religion which is known, however they do revere their leader or “Princess” much like a god. Kuja are very neutral when it comes to the world’s factions since they have never really interacted with them before. While many Kuja seem kind and friendly, they will turn on you in an instant if the Princess orders them to. The princess and her sisters are known to be quite cruel though, at least to males.</p>
+            
+            <p><b>Kuja Racial Traits: </b></p>
+            <ul>
+                <li><b>Amazon - </b>+2 CHA, +2 DEX, -2 WIS</li>
+                <li><b>Size - </b>Small to Large</li>
+                <li><b>Runs Like a Girl - </b>30ft/turn on Land, 20ft/turn in Water</li>
+                <li><b>Kuja Snake - </b>Start with a Kuja Snake (see Crew Members Section)</li>
+                <li><b>Haki Arrows - </b>Starts with the Busoshoku Haki Feat. Only the +3 damage effect of the stance can be applied. The DC to maintain the effect is reduced to 17. The Kuja cannot apply the defensive properties of the normal feat or purchase additional ranks until the normal prerequisites are met.</li>
+            </ul>
+            
+            <h2 class="page-header" id="Cyborgs">Cyborgs</h2>
+            <p><b>Physical Description: </b>Cyborgs are not technically a race of their own. They are a collection of many races that have been surgically altered with metallic and/or electric parts. Typically cyborgs are large and have exaggerated features such as huge forearms or giant torsos. Within these features they hide their cyborg technology and weapons. With metallic skin, enhanced eyes, tireless legs, and other implanted features, cyborgs can be tough to take down. All cyborgs retain their ability to breed as if they were still a member of their original race.</p>
+        
+            <p><b>Society: </b>Cyborgs don’t have a society of their own. Cyborgs with minds of their own usually just live with their family and friends like a normal member of their original race. If the cyborg isn’t self aware, they will most likely be the agent of a scientist or the world government.</p>
+        
+            <p><b>Relations: </b>Cyborgs aren’t well known by the world’s population. Only a handful of people know of their existence and of those, they typically see cyborgs as a weapon or an enemy. It’s rare for a cyborg to be accepted once their secret is discovered, however they make a powerful ally to whoever can form a mutual trust with them. If the cyborg isn’t self aware they will only see others as targets or non-targets.</p>
+        
+            <p><b>Alignment and Religion: </b>Cyborgs who are self aware can be of any alignment since they have free will. However, if the cyborg is a mindless servant, they will be the ultimate form of neutrality. They will follow any order given to them by their master and will complete their mission without happiness or remorse.</p>
+            
+            <p><b>Cyborgs Racial Traits: </b></p>
+            <ul>
+                <li><b>Mechanical Warrior - </b>+2 CON, +2 STR, -2 CHA</li>
+                <li><b>Size - </b>Size range of original race</li>
+                <li><b>Mechanical Legs - </b>Land/Water movement of original race</li>
+                <li><b>Unnatural Body - </b>The cyborg cannot heal naturally, they require medical attention whenever they are injured. Additionally, poison and disease type effects last twice as long on a cyborg since they have poor immune systems.</li>
+                <li><b>Gas Guzzler - </b>Must consume ½ bottle of fuel per day to survive, starts with 3 bottles of fuel storage. A cyborg can use any type of typical fuel (gasoline/oil/etc) or they may use beverages (cola/tea/fruit juice). When using a fuel of their preference a cyborg will act normally. However, if a cyborg is filled with a different type of fuel their personality may shift dramatically. For example, a cyborg that uses tea as their main fuel type may become enraged if they are instead filled with hot sauce. Fresh water, sea water, and other non-calorie liquids cannot be used as an energy source. If a cyborg’s current fuel supply drops to ½ bottle or lower, they enter a “Low On Fuel” status. See the status effects section for more information.</li>
+                <li><b>Initial Implant - </b>Starts with 1 Cyborg Implant (see Cyborg Implants section for more information), and gains one more every 4 levels after. At level 20 the cyborg will have 6 implants. You can work with your DM to create a more customized list for your unique cyborg if you don’t want any of the example implants from this document.</li>
+            </ul>
+            
+            <h2 class="page-header" id="Longarm_Longleg">Longarm/Longleg Tribesmen</h2>
+            <p><b>Physical Description: </b>There are two different tribes, both with unique physical characteristics. More is known about the Longarm tribe than the Longleg tribe but neither has gotten much attention in the series. Therefore we can only speculate about many things. As far as physical traits, Longarm tribe members have arms with an extra joint in them. This allows them greater dexterity and field of movement, while also improving their reach distance. Unlike the Longarm tribe, Longleg tribesmen’s legs do not have extra joints. Their legs are just inhumanly long, up to 7 feet tall while their bodies are the same dimensions as a normal human.</p>
+        
+            <p><b>Society: </b>Almost nothing is known about the Longleg tribe’s lifestyle. The only Longleg character shown spoke in a French accent and wore a fancy pink suit, its unknown if all Longleg tribesmen speak or dress similarly. More is known about the Longarm tribe though. Longarm tribesmen always seem to wear clothing with a unique Chinese Kanji character written on the front of their chests. They seem like normal humans, with some tribesmen being greedy and corrupt while others just live normal lives. They also regard normal humans as weird for only having one joint in their arms.</p>
+        
+            <p><b>Relations: </b>While nothing is known about the Longleg tribe’s relationship with other cultures, the Longarm tribe has had some issues with nearby human tribes. Evil, greedy Longarm tribesmen have been known to kidnap humans and force them to act in freak shows. Since the Longarm tribes regard human arms to be strange, the human victims attract a big crowd. Outside nearby villages though, most humans don’t even know the Longarm tribe exists since they live only in the Grand Line. Corrupt humans have also been known to enslave both tribes, valuing each at 700,000 Beli per slave.</p>
+        
+            <p><b>Alignment and Religion: </b>Members of both races, Longarms and Longlegs, have been shown as pirates and extortionists. However, some tribesmen are merely neutral and uncaring. No kind or “good” tribesman has been shown yet, however that doesn’t mean they don’t exist.</p>
+            
+            <p><b>Longarm/Longleg Tribesmen Racial Traits: </b></p>
+            <ul>
+                <li><b>Harder Better Faster Longer - </b>+2 CON, +2 DEX, -2 CHA</li>
+                <li><b>Size - </b>Longarms are medium sized. Longlegs are large sized.</li>
+                <li><b>Long Limbed - </b>30ft/turn on Land, 20ft/turn in Water</li>
+                <li><b>Living Stilts (Longleg Only) - </b>+5ft land movement speed, small characters can only reach and attack your legs. You can stand in deeper water than other characters, which is especially useful if you have a devil fruit ability.</li>
+                <li><b>Double Elbows (Longarm Only) - </b>+5ft reach length which allows you to melee attack other characters which probably can’t reach you and melee back without moving. This extra reach also applies to ranged weapons since you can hold the weapon further from your body while firing.</li>
+            </ul>
+            
+            <h1 class="page-header" id="Classes">Classes</h1>
+            
+            <p>There are six classes to help categorize your character’s fighting style. Each character selects a class at level 1 along with a career. Each class and career has their own unique set of feats which only members of that class can purchase using their feat points. For example, only Brawlers are able to purchase the Abuse feat.</p>
+            
+            <p>Later on in the character’s life, they’ll be able to choose a prestige class which will further specialize their original class’ abilities. It’s recommended the player look over the prestige classes in order to plan for the prerequistes you’ll need later down the road. Each class comes with a couple free feats to get you started, grants you profiency to certain weapons and armor, and opens certain secondary skills for the character.</p>
+            
+            <h2 class="page-header" id="Brawler">Brawler</h2>
+            <p>Brawlers are the most common type of fighter in the One Piece world. Showing up to a sword fight without a weapon may sound foolish, but when one reaches a certain level of skill, their fists are stronger and more reliable than any blade. A brawler is a tough offensive style fighter that deals large amounts of damage in quick bursts. They can turn their entire bodies into a weapon including elbows, knees, head, and feet. This means a brawler can even fight just as effectively even with their arms occupied or disabled. Brawlers are important for a crew since they can take a lot of damage while also dishing it back out. Brawlers don’t need to rely on weapons, making disarm attempts pointless. They’re also great support in battle for their nakama, such as being able to throw a swordsman at an enemy to increase the swordsman's attack damage. The brawler’s greatest weaknesses are things they can’t dodge or block. Bullets, for example, may present a challenge.</p>
+            <h2 class="page-header" id="Marksman">Marksman</h2>
+            
+            <h2 class="page-header" id="Rogue">Rogue</h2>
+            
+            <h2 class="page-header" id="Specialist">Specialist</h2>
+            
+            <h2 class="page-header" id="Swordsman">Swordsman</h2>
+            
+            <h2 class="page-header" id="Warrior">Warrior</h2>
+            
+            <h2 class="page-header" id="Brawler">Brawler</h2>
+            
+            <h1 class="page-header" id="Careers">Careers</h1>
+            <h1 class="page-header" id="Primary_Skills">Primary Skills</h1>
+            <h1 class="page-header" id="Secondary_Skills">Secondary Skills</h1>
+        </div>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
